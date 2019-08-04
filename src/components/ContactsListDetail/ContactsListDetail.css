@@ -1,0 +1,50 @@
+.fixSize {
+    max-width: 120px;
+}
+
+.list-group-item {
+    border: 0px;
+}
+
+.name {
+    color: #6c757d;
+}
+
+.selectable:hover {
+    margin-left: auto;
+    margin-right: auto;
+    background: aliceblue;
+}
+
+.list-group {
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    border-left: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.row {
+    padding: 15px;
+}
+
+.star {
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.fixed-space {
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 572px)  {
+    .star-bottom {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px)  {
+    .star-bottom {
+        display: none;
+    }
+    .name {
+        font-size: 1.4em;
+    }
+}
