@@ -124,7 +124,10 @@ ul.c-controls li a:hover {
     
 
     .text-muted2 {
-        font-size: 2vw !important;
+        font-size: 100% !important;
+    }
+    .fix {
+        font-size: 70% !important;
     }
 
     .row {

@@ -53,7 +53,7 @@ function ContactDetail(props) {
                                     <div className="col-12 text-center profile-title fix-line">
                                         <label className="name2">{contact.name}</label>
                                         <br />
-                                        <span className="text-muted2">{contact.companyName}</span>
+                                        <span className="text-muted2 fix">{contact.companyName}</span>
                                     </div>
                                 </div>
                                 {Object.keys(contact.phone).sort().map((typeOfPhone, index) => {
