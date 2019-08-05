@@ -1,9 +1,12 @@
 # ContactsList
 
+First app made in react
+
 ## How to run:
-1)
+1) Clone the project into your preferred folder
+2) Navigate to the path where you cloned the project and run the following command
 > yarn install
-2)
+3) Once everything is installed, run the following command
 > yarn start
 
 ### App working
