@@ -1,0 +1,138 @@
+.title-contacts {
+    font-size: 6.5vw;
+    font-weight: 400 !important;
+    color: #40b0ff;
+    position: absolute;
+    bottom:0;
+    margin-left: 6vw;
+}
+.title-minor {
+    font-size: 6.5vw;
+    color: #40b0ff;
+    position: absolute;
+    bottom:0;
+    padding: 0px;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.panel-heading2 {
+    text-align: left !important;
+    background: #f5f4f4;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    height: 85px;
+    position: relative;
+}
+
+.pad2 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.fix-large-size {
+    max-width: 80%;
+    padding: 10px;
+}
+.text-sm-left {
+    text-align: left !important;
+}
+
+.profile {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.text-muted{
+    font-weight: 400;
+}
+
+.subtitle-size{
+    font-size: 3.5vw;
+}
+.value-name {
+    font-size: 100%;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.fixed-space {
+    padding-bottom: 5px;
+}
+
+.profile-title{
+    padding: 20px;
+    font-size: 5vw;
+}
+
+.profile-subtitle{
+    padding: 20px;
+}
+
+.right-sided-text {
+    float: right;
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+.row {
+    padding: 12px;
+}
+
+.fix-star {
+    width: 9vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 7px;
+}
+
+@media only screen and (min-width: 600px)  {
+    .value-name {
+        font-size: 150%;
+    }
+}
+
+
+@media only screen and (max-width: 599px)  {
+    /* .row {
+        padding: 5px !important;
+    } */
+    .profile-subtitle {
+        padding: 8px;
+    }
+    label {
+        margin-bottom: 0rem  !important;
+    }
+
+    .fixed-space {
+        padding-bottom: 0px;
+    }
+
+    .name2 {
+        font-size: 100% !important;
+    }
+
+    .text-muted2 {
+        font-size: 70% !important;
+    }
+    .fix-line {
+        line-height: 70% !important;
+    }
+}
+
+
+
+@media only screen and (min-width: 850px)  {
+    .title-contacts {
+        font-size: 45px;
+    }
+    .title-minor {
+        font-size: 45px;
+    }
+    .fix-star {
+        width: 60px;
+    }
+}
