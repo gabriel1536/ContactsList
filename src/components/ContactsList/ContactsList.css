@@ -1,5 +1,6 @@
 .container {
-    max-width: 1024px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 .c-list {
     padding: 0px;
@@ -52,6 +53,12 @@ ul.c-controls li a:hover {
     font-size: 1.25em;
 }
 
+.border-bottom {
+    max-width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .panel-heading {
     background: #f5f4f4;
     text-align: center;
@@ -92,5 +99,52 @@ ul.c-controls li a:hover {
     .panel-separator {
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+}
+
+.container2 {
+    max-width: 600px !important;
+}
+
+@media only screen and (min-width: 767px)  {
+    .container {
+        max-width: 768px !important;
+    }
+    .value-name {
+        font-size: 170%;
+    }
+
+    .text-muted {
+        font-size: 120%;
+    }
+
+    .container2 {
+        max-width: 600px !important;
+    }
+    
+
+    .text-muted2 {
+        font-size: 2vw !important;
+    }
+
+    .row {
+        padding: 20px !important;
+        padding-left: 4% !important;
+        padding-right: 4% !important;
+    }
+}
+
+@media only screen and (min-width: 1023px)  {
+    .container {
+        max-width: 1024px !important;
+    }
+    .container2 {
+        max-width: 600px !important;
+    }
+    
+    .row {
+        padding: 30px !important;
+        padding-left: 8% !important;
+        padding-right: 8% !important;
     }
 }

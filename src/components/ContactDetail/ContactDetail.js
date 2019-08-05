@@ -7,9 +7,10 @@ import otherStar from '../../assets/objects/favorite-false.png';
 import userIcon from '../../assets/objects/userIconLarge.png';
 
 function ContactDetail(props) {
-    const { contacts, match, contactsUpdater } = props;
+    const { contacts, match, contactsUpdater, maxWidth } = props;
     const contactId = match.params.id;
     const contact = contacts.find(contact => contact.id === contactId);
+    
     window.scrollTo(0, 0);
 
     const setFavorite = (() => {
@@ -30,7 +31,7 @@ function ContactDetail(props) {
     });
 
     return (
-        <div className="container">
+        <div className={"container " + maxWidth}>
             <div className="panel panel-default">
                 <div className="panel-heading2 c-list">
                     <Link to={"/"}>
@@ -49,10 +50,10 @@ function ContactDetail(props) {
                                     <div className="profile">
                                         <img src={contact.largeImageURL} onError={(e) => { e.target.onerror = null; e.target.src = userIcon }} alt={contact.name} className="img-fluid mx-auto d-block img-fluid fix-large-size" />
                                     </div>
-                                    <div className="col-12 text-center profile-title">
-                                        <label className="name lead fixed-space">{contact.name}</label>
+                                    <div className="col-12 text-center profile-title fix-line">
+                                        <label className="name2">{contact.name}</label>
                                         <br />
-                                        <span className="text-muted fixed-space">{contact.companyName}</span>
+                                        <span className="text-muted2">{contact.companyName}</span>
                                     </div>
                                 </div>
                                 {Object.keys(contact.phone).sort().map((typeOfPhone, index) => {

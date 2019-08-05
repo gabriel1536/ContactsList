@@ -15,7 +15,7 @@ function Detail(props) {
                     <label className="text-muted subtitle-size fixed-space">{subtitleName}:</label>
                     <br />
                     <span className="value-name subtitle-size text-sm-left">{subValue}</span>
-                    {!!phoneType ? <span className="text-muted right-sided-text text-sm-right">{phoneType}</span> : ''}
+                    {!!phoneType ? <span className="text-muted2 right-sided-text text-sm-right">{phoneType}</span> : ''}
                 </div>
             </div>
         </div>
