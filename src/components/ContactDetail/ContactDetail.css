@@ -33,6 +33,7 @@
 
 .fix-large-size {
     max-width: 80%;
+    padding: 10px;
 }
 .text-sm-left {
     text-align: left !important;
@@ -52,7 +53,7 @@
     font-size: 3.5vw;
 }
 .value-name {
-    font-size: 3.5vw;
+    font-size: 100%;
     font-weight: 600;
     margin-left: 5px;
 }
@@ -88,19 +89,17 @@
     padding: 7px;
 }
 
-@media only screen and (max-width: 450px)  {
-    .row {
-        padding: 5px !important;
-    }
-    .profile-subtitle {
-        padding: 12px;
+@media only screen and (min-width: 600px)  {
+    .value-name {
+        font-size: 150%;
     }
 }
 
-@media only screen and (max-width: 350px)  {
-    .row {
-        padding: 0px !important;
-    }
+
+@media only screen and (max-width: 599px)  {
+    /* .row {
+        padding: 5px !important;
+    } */
     .profile-subtitle {
         padding: 8px;
     }
@@ -111,7 +110,19 @@
     .fixed-space {
         padding-bottom: 0px;
     }
+
+    .name2 {
+        font-size: 100% !important;
+    }
+
+    .text-muted2 {
+        font-size: 70% !important;
+    }
+    .fix-line {
+        line-height: 70% !important;
+    }
 }
+
 
 
 @media only screen and (min-width: 850px)  {

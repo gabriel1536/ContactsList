@@ -5,9 +5,10 @@ import './ContactsList.css';
 import ContactsListDetail from '../ContactsListDetail/ContactsListDetail';
 
 function ContactsList(props) {
-  const { contacts, isLoading } = props;
+  const { contacts, isLoading, maxWidth } = props;
   const [otherContacts, setOtherContacts] = useState([]);
   const [favoriteContacts, setFavoriteContacts] = useState([]);
+  
 
   useEffect(() => {
     let otherContacts = [], favoriteContacts = [];
@@ -21,7 +22,7 @@ function ContactsList(props) {
   }
 
   return (
-    <div className="container">
+    <div className={'container ' + maxWidth}>
       <div className="panel panel-default">
         <div className="panel-heading c-list">
           <span className="title">Contacts</span>
